@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 #   Welcome to Spark Structured Streaming + Kafka  SQL Read / Write
 
@@ -54,3 +55,6 @@ We apply interactive SQL query to form DF
            stdfk.awaitTermination()
            spark.sql("select deviceName,IMEI-number,device-location from stream_tble").show(false)`
       
+=======
+# spark-streaming
+>>>>>>> 6da59839fff2a054a2b14294c574441f129dd367
