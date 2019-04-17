@@ -31,7 +31,7 @@ object Structured_Streaming {
 
   private val LOGGER = Logger.getLogger(this.getClass.getName)
   private val prop = new Properties();
-  prop.load(new FileInputStream("D:\\2 work-space\\open-code\\spark-structured-streaming-kafka-sql-master\\src\\main\\resources\\structured-streaming.properties")) // Read config from property file
+  prop.load(new FileInputStream("conf/structured-streaming.properties")) // Read config from property file
   private val propsMap=prop.asScala
 
   def main(args: Array[String]): Unit = {
@@ -52,7 +52,7 @@ object Structured_Streaming {
 
     val spark = SparkSession
       .builder()
-      .master("local[2]")
+      //.master("local[2]")
       .appName("Structured_Streaming")
 //      .enableHiveSupport()
       .getOrCreate();
